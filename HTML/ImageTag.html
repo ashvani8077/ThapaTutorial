@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        /* img{
+            box-shadow: red 0px 7px 29px 0px;
+            border: 5px solid black;
+            max-width: 800px;
+        } */
+        h1,h2{
+            font-family: "Shadows Into Light", cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Haa bhai kar le darshan or haath jod le</h1>
+    <img src="https://tv7bharat.tv/wp-content/uploads/2024/01/TV7BHARAT-3-1.jpg" alt="Shree ram ji ka ram darbar laga hua hai" height="auto" width="100%" title="Shree Ram Chandra Ji Maharaj Ki Jai" loading="lazy">
+    <br>
+    <h2>Link Inside Image Tage</h2>
+    <p>Aaja Jaadu dikhau</p>
+    <a href="https://en.wikipedia.org/wiki/Coffee"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Latte_and_dark_coffee.jpg/1200px-Latte_and_dark_coffee.jpg" alt="Coffe Piyega"></a>
+
+    <h2>Maaza Nahi aaya yaar</h2>
+    <p>Map padhte hai, pta hai ye kya krega? ye image ke andar particular area me Anchor tag generate karega</p>
+    <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Latte_and_dark_coffee.jpg/1200px-Latte_and_dark_coffee.jpg" alt="Coffe Piyega"
+        usemap="#map">
+
+        <map name="map">
+            <area 
+            shape="rect" 
+            coords="0,0,250,150" 
+            href="https://www.munatycooking.com/wp-content/uploads/2024/04/Three-glasses-filled-with-karak-chai-500x500.jpg" 
+            alt="maja to chai me hee hai">
+        </map>
+        <h1>Topic thoda boring hai lekin hai badhiya.</h1>
+        <img 
+        src="https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+        alt="ghoda"
+        srcset="
+        https://www.vitaflex.com/-/media/Project/OneWeb/VitaFlex/Images/Arena/Blog-best-Breeds-for-Dressage.jpg?h=572&w=1000&hash=870766CB3957317038118DCB0F8371AD 400w,
+        https://cdn.cdnparenting.com/articles/2019/05/08123232/1175510683-H-1024x700.webp 600w,
+        https://www.tastingtable.com/img/gallery/ive-tried-horse-meat-here-are-my-thoughts/intro-1682539768.jpg 800w,
+        https://static.vecteezy.com/system/resources/thumbnails/026/261/160/small_2x/white-horse-running-in-the-desert-the-galloping-white-horse-ai-generative-photo.jpg 1000w"
+        
+        sizes="(max-width: 600px) 400px,
+                (max-width: 800px) 600px,
+                (max-width:1100px) 1000px,
+                1200px">
+</body>
+</html>
