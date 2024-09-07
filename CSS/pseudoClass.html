@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:only-child{
+            color: red;
+        }
+        li:nth-last-child(2n-1){
+            color: yellow;
+        }
+        p:target{
+            background-color: yellow;
+            color: red;
+        }
+        input:focus{
+            background-color: green;
+            color: white;
+            border: 4px solid yellow;
+        }
+        input[type='checkbox']:checked{
+            box-shadow: 0 0 0 3px yellow;
+        }
+        input[type='email']:invalid{
+            background-color: red;
+            color: green;
+        }
+        input[type='email']:valid{
+            background-color: green;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#check">click on me</a>
+    <h1>Pseudo class</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae iusto dolorum iure, numquam ipsum nam minima, quidem nobis saepe ipsam accusamus incidunt perspiciatis, facilis repudiandae culpa quo corrupti voluptas?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit beatae itaque vero ullam eos distinctio temporibus modi. Perspiciatis hic cupiditate aliquid nihil in facilis soluta doloremque ut dolorum quasi!</p>
+
+    <ul>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Soya</li>
+        <li>Cold Drink</li>
+        <li>Sacks</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat ab ipsum aperiam labore, est doloremque architecto necessitatibus, debitis facilis natus error vitae? Perferendis animi corporis vel sequi error eaque omnis.</p>
+    <p id="check">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam quas dolores impedit asperiores eveniet inventore itaque harum, exercitationem assumenda cum cumque, libero magni maiores voluptate voluptatem unde ad modi at.</p>
+    <ol>
+        <li>Hindi</li>
+        <li>English</li>
+        <li>Telgu</li>
+        <li>Kannad</li>
+    </ol>
+    <h1>
+        form bhar dijiye
+    </h1>
+    <form action="">
+        <label for="fname">First Name: </label>
+        <input type="text" name="" id="fname">
+        <br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" name="" id="lname">
+        <br><br>
+        <label for="age">Age: </label>
+        <input type="text" name="" id="age">
+        <br><br>
+        <label for="mail">E-Mail Id: </label>
+        <input type="email" name="" id="mail" required>
+        <br><br>
+        <label for="hobbies">Hobbies: </label>
+        <input type="radio" name="hobbies" id="">Sports
+        <input type="radio" name="hobbies" id="">Music
+        <input type="radio" name="hobbies" id="">Travel
+        <input type="radio" name="hobbies" id="">Books Reading
+        <br><br>
+        <h3>Checkbox</h3>
+        <input type="checkbox" name="" id="">
+    </form>
+</body>
+</html>

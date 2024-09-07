@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Advanced Child Combinator with Element Selector</title>
+
+    <style>
+      div > p {
+        font-weight: bold;
+      }
+
+      #container > div > p {
+        color: red;
+      }
+      .highlight > div > p {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <p>This is a direct child paragraph inside #container.</p>
+      <div>
+        <p>This is a nested paragraph inside a div within #container.</p>
+      </div>
+
+      <div class="highlight">
+        <div>
+          <p>
+            This is a nested paragraph inside a div within .highlight inside
+            #container.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p>This is an unrelated paragraph.</p>
+    </div>
+  </body>
+</html>
