@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 1000px;
+            height: 800px;
+            color: #fff;
+            background:linear-gradient(to right, #514a9d, #24c6dc);
+            box-shadow: 0px 4px 12px rgba(0 0 0 0.1);
+            border-radius: 15px;
+        }
+        .child{
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(to right, #93edc7, #1cd8de);
+            box-shadow: 0px 7px 29px 0px rgba(100, 100, 111,0.2);
+            display: grid;
+            place-items: center;
+            font-size: 32px;
+            color: #003180;
+            border-radius: 10px;
+        }
+        .parent{
+            position: relative;
+            left: 300px;
+        }
+        .child{
+            position: absolute;
+
+        }
+        .child2{
+            top: 0;
+            right: 0;
+        }
+        .child3{
+            bottom: 0;
+            right: 0;
+        }
+        .child4{
+            bottom: 0;
+        }
+        .child5{
+            /* left: 425px;
+            top: 325px; */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-heading">Css Positions </h1>
+    <h2>Positions Absolute and Relative</h2>
+    <section class="parent">
+        <div class="child child1">Child1</div>
+        <div class="child child2">Child2</div>
+        <div class="child child3">Child3</div>
+        <div class="child child4">Child4</div>
+        <div class="child child5">Child5</div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-shadow: 2px 2px 5px rgba(0,0,0,0,3);
+            font-size: 24px;
+            letter-spacing: 1.5px;
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            border-radius: 5px;
+            color: #fff;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        a{
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            font-size: 24px;
+            letter-spacing: 1.5px;
+            background-image: linear-gradient(to right, #182848, #4b6cb7);
+            color: #fff;
+            border-radius: 5px;
+            width: 500px;
+            height: 100px;
+            display: inline-block;
+            padding-left: 400px;
+            padding-top: 50px;
+            margin: 50px;
+        }
+        p:nth-of-type(2),
+        a:nth-of-type(2),
+        .inlineBlock:last-child{
+            background: linear-gradient(to right, #514a9d, #24c6dc);
+        }
+        a:first-of-type{
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Display </h1>
+    <section>
+        <div>
+            <p>This is a block-level element</p>
+            <p>This is a block-level element</p>
+            <a href="#">Inline level element</a>
+            <a href="#">Register Now</a>
+            <br>
+            <a href="#" class="inlineBlock">Inline Level Element</a>
+            <a href="#" class="inlineBlock">Register Now</a>
+        </div>
+    </section>
+</body>
+</html>
